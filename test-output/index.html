@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>P:\Users\damdee0\eclipse-workspace\Iceridge\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 2 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateClientTest" class="method navigator-link" hash-for-method="clientCreation(Mr, Antonio, Criola, 0255557781, test@espreon.com, 11/19/1981, 216, Edgar Street, Crest, Condell Par...)">clientCreation(Mr, Antonio, Criola, 0255557781, test@espreon.com, 11/19/1981, 216, Edgar Street, Crest, Condell Par...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateMatterTest" class="method navigator-link" hash-for-method="matterCreation(Purchasing a Property, NSW, 12342, 32/13573, 216, Edgar Street, Crest, Condell Park, 2200, NSW, Hawk...)">matterCreation(Purchasing a Property, NSW, 12342, 32/13573, 216, Edgar Street, Crest, Condell Park, 2200, NSW, Hawk...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateClientTest" class="method navigator-link" hash-for-method="clientCreation(Mr, Doon, Chung Hung, 0255558782, test@espreon.com, 07/17/1986, 1, Applebox Avenue, Ridge, Glenwood,...)">clientCreation(Mr, Doon, Chung Hung, 0255558782, test@espreon.com, 07/17/1986, 1, Applebox Avenue, Ridge, Glenwood,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateClientTest" class="method navigator-link" hash-for-method="clientCreation(Mr, ANATOLY, KITAYEVICH, 0255559783, test@espreon.com, 09/26/1987, 29/13-17, Bellevue Road, Grove, B...)">clientCreation(Mr, ANATOLY, KITAYEVICH, 0255559783, test@espreon.com, 09/26/1987, 29/13-17, Bellevue Road, Grove, B...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateClientTest" class="method navigator-link" hash-for-method="clientCreation(Mr, Floriana, Criola, 0255557781, test@espreon.com, 06/21/1983, 216, Edgar Street, Crest, Condell Pa...)">clientCreation(Mr, Floriana, Criola, 0255557781, test@espreon.com, 06/21/1983, 216, Edgar Street, Crest, Condell Pa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateClientTest" class="method navigator-link" hash-for-method="clientCreation(Mr, Paul, James Wild, 0255556780, test@espreon.com, 09/23/1978, 18, Powell Street, Avenue, Coogee, 2...)">clientCreation(Mr, Paul, James Wild, 0255556780, test@espreon.com, 09/23/1978, 18, Powell Street, Avenue, Coogee, 2...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateClientTest" class="method navigator-link" hash-for-method="clientCreation(Mr, Pui, Kuen Lam, 0255558782, test@espreon.com, 10/28/1988, 1, Applebox Avenue, Ridge, Glenwood, 27...)">clientCreation(Mr, Pui, Kuen Lam, 0255558782, test@espreon.com, 10/28/1988, 1, Applebox Avenue, Ridge, Glenwood, 27...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateNewContactTest" class="method navigator-link" hash-for-method="contactCreation(Caveator, Mr, Antonio, Criola, 0255557781, test@espreon.com, 216, Edgar Street, Crest, Condell Park,...)">contactCreation(Caveator, Mr, Antonio, Criola, 0255557781, test@espreon.com, 216, Edgar Street, Crest, Condell Park,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateNewContactTest" class="method navigator-link" hash-for-method="contactCreation(Mortgagee, Mr, ANATOLY, KITAYEVICH, 0255559783, test@espreon.com, 29/13-17, Bellevue Road, Grove, Be...)">contactCreation(Mortgagee, Mr, ANATOLY, KITAYEVICH, 0255559783, test@espreon.com, 29/13-17, Bellevue Road, Grove, Be...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateNewContactTest" class="method navigator-link" hash-for-method="contactCreation(Caveator, Mr, Floriana, Criola, 0255557781, test@espreon.com, 216, Edgar Street, Crest, Condell Park...)">contactCreation(Caveator, Mr, Floriana, Criola, 0255557781, test@espreon.com, 216, Edgar Street, Crest, Condell Park...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateNewContactTest" class="method navigator-link" hash-for-method="contactCreation(Accountant, Mr, Paul, James Wild, 0255556780, test@espreon.com, 18, Powell Street, Avenue, Coogee, 2...)">contactCreation(Accountant, Mr, Paul, James Wild, 0255556780, test@espreon.com, 18, Powell Street, Avenue, Coogee, 2...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateNewContactTest" class="method navigator-link" hash-for-method="contactCreation(Conveyancer, Mr, Doon, Chung Hung, 0255558782, test@espreon.com, 1, Applebox Avenue, Ridge, Glenwood...)">contactCreation(Conveyancer, Mr, Doon, Chung Hung, 0255558782, test@espreon.com, 1, Applebox Avenue, Ridge, Glenwood...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateNewContactTest" class="method navigator-link" hash-for-method="contactCreation(Conveyancer, Mr, Pui, Kuen Lam, 0255558782, test@espreon.com, 1, Applebox Avenue, Ridge, Glenwood, 2...)">contactCreation(Conveyancer, Mr, Pui, Kuen Lam, 0255558782, test@espreon.com, 1, Applebox Avenue, Ridge, Glenwood, 2...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.LoginPageTest" class="method navigator-link" hash-for-method="loginPage">loginPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.LogoutPageTest" class="method navigator-link" hash-for-method="logoutPage">logoutPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateMatterTest" class="method navigator-link" hash-for-method="matterCreation(Purchasing a Property, NSW, 12343, 314/1005966, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW, June...)">matterCreation(Purchasing a Property, NSW, 12343, 314/1005966, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW, June...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateMatterTest" class="method navigator-link" hash-for-method="matterCreation(Purchasing a Property, NSW, 12344, 29/SP22456, 29/13-17, Bellevue Road, Grove, Bellevue Hill, 2023, ...)">matterCreation(Purchasing a Property, NSW, 12344, 29/SP22456, 29/13-17, Bellevue Road, Grove, Bellevue Hill, 2023, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateMatterTest" class="method navigator-link" hash-for-method="matterCreation(Purchasing a Property, NSW, 12343, 314/1005966, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW, June...)">matterCreation(Purchasing a Property, NSW, 12343, 314/1005966, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW, June...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateMatterTest" class="method navigator-link" hash-for-method="matterCreation(Purchasing a Property, NSW, 12342, 32/13573, 216, Edgar Street, Crest, Condell Park, 2200, NSW, Hawk...)">matterCreation(Purchasing a Property, NSW, 12342, 32/13573, 216, Edgar Street, Crest, Condell Park, 2200, NSW, Hawk...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.iceridge.testcases.CreateMatterTest" class="method navigator-link" hash-for-method="matterCreation(Purchasing a Property, NSW, 12341, 29/DP976765, 18, Powell Street, Avenue, Coogee, 2034, NSW, Cumber...)">matterCreation(Purchasing a Property, NSW, 12341, 29/DP976765, 18, Powell Street, Avenue, Coogee, 2034, NSW, Cumber...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.iceridge.testcases.CreateClientTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clientCreation(Mr, Antonio, Criola, 0255557781, test@espreon.com, 11/19/1981, 216, Edgar Street, Crest, Condell Par...)">
+                  </a> <!-- clientCreation(Mr, Antonio, Criola, 0255557781, test@espreon.com, 11/19/1981, 216, Edgar Street, Crest, Condell Par...) -->
+                  <span class="method-name">clientCreation</span>
+                  <span class="parameters">(Mr, Antonio, Criola, 0255557781, test@espreon.com, 11/19/1981, 216, Edgar Street, Crest, Condell Park, 2200, NSW, Antonio)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Client details are not added succesfully expected [Antonio] but found [Antonio Criola]
+	at com.iceridge.testutilities.TestUtil.verifyDetails(TestUtil.java:196)
+	at com.iceridge.testcases.CreateClientTest.clientCreation(CreateClientTest.java:56)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.iceridge.testcases.CreateMatterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="matterCreation(Purchasing a Property, NSW, 12342, 32/13573, 216, Edgar Street, Crest, Condell Park, 2200, NSW, Hawk...)">
+                  </a> <!-- matterCreation(Purchasing a Property, NSW, 12342, 32/13573, 216, Edgar Street, Crest, Condell Park, 2200, NSW, Hawk...) -->
+                  <span class="method-name">matterCreation</span>
+                  <span class="parameters">(Purchasing a Property, NSW, 12342, 32/13573, 216, Edgar Street, Crest, Condell Park, 2200, NSW, Hawkesbury City Council, Antonio, Contract of Sale)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Matter details are not added succesfully expected [Antonio] but found [Antonio Criola]
+	at com.iceridge.testutilities.TestUtil.verifyDetails(TestUtil.java:210)
+	at com.iceridge.testcases.CreateMatterTest.matterCreation(CreateMatterTest.java:64)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.iceridge.testcases.CreateClientTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clientCreation(Mr, Doon, Chung Hung, 0255558782, test@espreon.com, 07/17/1986, 1, Applebox Avenue, Ridge, Glenwood,...)">
+                  </a> <!-- clientCreation(Mr, Doon, Chung Hung, 0255558782, test@espreon.com, 07/17/1986, 1, Applebox Avenue, Ridge, Glenwood,...) -->
+                  <span class="method-name">clientCreation</span>
+                  <span class="parameters">(Mr, Doon, Chung Hung, 0255558782, test@espreon.com, 07/17/1986, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW, Doon Chung Hung)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clientCreation(Mr, ANATOLY, KITAYEVICH, 0255559783, test@espreon.com, 09/26/1987, 29/13-17, Bellevue Road, Grove, B...)">
+                  </a> <!-- clientCreation(Mr, ANATOLY, KITAYEVICH, 0255559783, test@espreon.com, 09/26/1987, 29/13-17, Bellevue Road, Grove, B...) -->
+                  <span class="method-name">clientCreation</span>
+                  <span class="parameters">(Mr, ANATOLY, KITAYEVICH, 0255559783, test@espreon.com, 09/26/1987, 29/13-17, Bellevue Road, Grove, Bellevue Hill, 2023, NSW, ANATOLY KITAYEVICH)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clientCreation(Mr, Floriana, Criola, 0255557781, test@espreon.com, 06/21/1983, 216, Edgar Street, Crest, Condell Pa...)">
+                  </a> <!-- clientCreation(Mr, Floriana, Criola, 0255557781, test@espreon.com, 06/21/1983, 216, Edgar Street, Crest, Condell Pa...) -->
+                  <span class="method-name">clientCreation</span>
+                  <span class="parameters">(Mr, Floriana, Criola, 0255557781, test@espreon.com, 06/21/1983, 216, Edgar Street, Crest, Condell Park, 2200, NSW, Floriana Criola)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clientCreation(Mr, Paul, James Wild, 0255556780, test@espreon.com, 09/23/1978, 18, Powell Street, Avenue, Coogee, 2...)">
+                  </a> <!-- clientCreation(Mr, Paul, James Wild, 0255556780, test@espreon.com, 09/23/1978, 18, Powell Street, Avenue, Coogee, 2...) -->
+                  <span class="method-name">clientCreation</span>
+                  <span class="parameters">(Mr, Paul, James Wild, 0255556780, test@espreon.com, 09/23/1978, 18, Powell Street, Avenue, Coogee, 2034, NSW, Paul James Wild)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clientCreation(Mr, Pui, Kuen Lam, 0255558782, test@espreon.com, 10/28/1988, 1, Applebox Avenue, Ridge, Glenwood, 27...)">
+                  </a> <!-- clientCreation(Mr, Pui, Kuen Lam, 0255558782, test@espreon.com, 10/28/1988, 1, Applebox Avenue, Ridge, Glenwood, 27...) -->
+                  <span class="method-name">clientCreation</span>
+                  <span class="parameters">(Mr, Pui, Kuen Lam, 0255558782, test@espreon.com, 10/28/1988, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW, Pui Kuen Lam)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.iceridge.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage">
+                  </a> <!-- loginPage -->
+                  <span class="method-name">loginPage</span>
+                  <em>
+(Login page...)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.iceridge.testcases.CreateNewContactTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactCreation(Caveator, Mr, Antonio, Criola, 0255557781, test@espreon.com, 216, Edgar Street, Crest, Condell Park,...)">
+                  </a> <!-- contactCreation(Caveator, Mr, Antonio, Criola, 0255557781, test@espreon.com, 216, Edgar Street, Crest, Condell Park,...) -->
+                  <span class="method-name">contactCreation</span>
+                  <span class="parameters">(Caveator, Mr, Antonio, Criola, 0255557781, test@espreon.com, 216, Edgar Street, Crest, Condell Park, 2200, NSW)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactCreation(Mortgagee, Mr, ANATOLY, KITAYEVICH, 0255559783, test@espreon.com, 29/13-17, Bellevue Road, Grove, Be...)">
+                  </a> <!-- contactCreation(Mortgagee, Mr, ANATOLY, KITAYEVICH, 0255559783, test@espreon.com, 29/13-17, Bellevue Road, Grove, Be...) -->
+                  <span class="method-name">contactCreation</span>
+                  <span class="parameters">(Mortgagee, Mr, ANATOLY, KITAYEVICH, 0255559783, test@espreon.com, 29/13-17, Bellevue Road, Grove, Bellevue Hill, 2023, NSW)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactCreation(Caveator, Mr, Floriana, Criola, 0255557781, test@espreon.com, 216, Edgar Street, Crest, Condell Park...)">
+                  </a> <!-- contactCreation(Caveator, Mr, Floriana, Criola, 0255557781, test@espreon.com, 216, Edgar Street, Crest, Condell Park...) -->
+                  <span class="method-name">contactCreation</span>
+                  <span class="parameters">(Caveator, Mr, Floriana, Criola, 0255557781, test@espreon.com, 216, Edgar Street, Crest, Condell Park, 2200, NSW)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactCreation(Accountant, Mr, Paul, James Wild, 0255556780, test@espreon.com, 18, Powell Street, Avenue, Coogee, 2...)">
+                  </a> <!-- contactCreation(Accountant, Mr, Paul, James Wild, 0255556780, test@espreon.com, 18, Powell Street, Avenue, Coogee, 2...) -->
+                  <span class="method-name">contactCreation</span>
+                  <span class="parameters">(Accountant, Mr, Paul, James Wild, 0255556780, test@espreon.com, 18, Powell Street, Avenue, Coogee, 2034, NSW)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactCreation(Conveyancer, Mr, Doon, Chung Hung, 0255558782, test@espreon.com, 1, Applebox Avenue, Ridge, Glenwood...)">
+                  </a> <!-- contactCreation(Conveyancer, Mr, Doon, Chung Hung, 0255558782, test@espreon.com, 1, Applebox Avenue, Ridge, Glenwood...) -->
+                  <span class="method-name">contactCreation</span>
+                  <span class="parameters">(Conveyancer, Mr, Doon, Chung Hung, 0255558782, test@espreon.com, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactCreation(Conveyancer, Mr, Pui, Kuen Lam, 0255558782, test@espreon.com, 1, Applebox Avenue, Ridge, Glenwood, 2...)">
+                  </a> <!-- contactCreation(Conveyancer, Mr, Pui, Kuen Lam, 0255558782, test@espreon.com, 1, Applebox Avenue, Ridge, Glenwood, 2...) -->
+                  <span class="method-name">contactCreation</span>
+                  <span class="parameters">(Conveyancer, Mr, Pui, Kuen Lam, 0255558782, test@espreon.com, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.iceridge.testcases.CreateMatterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="matterCreation(Purchasing a Property, NSW, 12343, 314/1005966, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW, June...)">
+                  </a> <!-- matterCreation(Purchasing a Property, NSW, 12343, 314/1005966, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW, June...) -->
+                  <span class="method-name">matterCreation</span>
+                  <span class="parameters">(Purchasing a Property, NSW, 12343, 314/1005966, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW, Junee Shire Council, Pui Kuen Lam, Contract of Sale)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="matterCreation(Purchasing a Property, NSW, 12344, 29/SP22456, 29/13-17, Bellevue Road, Grove, Bellevue Hill, 2023, ...)">
+                  </a> <!-- matterCreation(Purchasing a Property, NSW, 12344, 29/SP22456, 29/13-17, Bellevue Road, Grove, Bellevue Hill, 2023, ...) -->
+                  <span class="method-name">matterCreation</span>
+                  <span class="parameters">(Purchasing a Property, NSW, 12344, 29/SP22456, 29/13-17, Bellevue Road, Grove, Bellevue Hill, 2023, NSW, Dubbo Regional Council, ANATOLY KITAYEVICH, Contract of Sale)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="matterCreation(Purchasing a Property, NSW, 12343, 314/1005966, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW, June...)">
+                  </a> <!-- matterCreation(Purchasing a Property, NSW, 12343, 314/1005966, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW, June...) -->
+                  <span class="method-name">matterCreation</span>
+                  <span class="parameters">(Purchasing a Property, NSW, 12343, 314/1005966, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW, Junee Shire Council, Doon Chung Hung, Contract of Sale)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="matterCreation(Purchasing a Property, NSW, 12342, 32/13573, 216, Edgar Street, Crest, Condell Park, 2200, NSW, Hawk...)">
+                  </a> <!-- matterCreation(Purchasing a Property, NSW, 12342, 32/13573, 216, Edgar Street, Crest, Condell Park, 2200, NSW, Hawk...) -->
+                  <span class="method-name">matterCreation</span>
+                  <span class="parameters">(Purchasing a Property, NSW, 12342, 32/13573, 216, Edgar Street, Crest, Condell Park, 2200, NSW, Hawkesbury City Council, Floriana Criola, Contract of Sale)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="matterCreation(Purchasing a Property, NSW, 12341, 29/DP976765, 18, Powell Street, Avenue, Coogee, 2034, NSW, Cumber...)">
+                  </a> <!-- matterCreation(Purchasing a Property, NSW, 12341, 29/DP976765, 18, Powell Street, Avenue, Coogee, 2034, NSW, Cumber...) -->
+                  <span class="method-name">matterCreation</span>
+                  <span class="parameters">(Purchasing a Property, NSW, 12341, 29/DP976765, 18, Powell Street, Avenue, Coogee, 2034, NSW, Cumberland Council, Paul James Wild, Contract of Sale)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.iceridge.testcases.LogoutPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutPage">
+                  </a> <!-- logoutPage -->
+                  <span class="method-name">logoutPage</span>
+                  <em>
+(Logout page...)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">P:\Users\damdee0\eclipse-workspace\Iceridge\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.iceridge.testutilities.Report&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Module 1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.iceridge.testcases.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.iceridge.testcases.CreateClientTest&quot;/&gt;
+      &lt;class name=&quot;com.iceridge.testcases.CreateNewContactTest&quot;/&gt;
+      &lt;class name=&quot;com.iceridge.testcases.CreateMatterTest&quot;/&gt;
+      &lt;class name=&quot;com.iceridge.testcases.LogoutPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Module 1 --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Module 1 (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'matterCreation')
+data.setCell(0, 2, 'com.iceridge.testcases.CreateMatterTest')
+data.setCell(0, 3, 46170);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'matterCreation')
+data.setCell(1, 2, 'com.iceridge.testcases.CreateMatterTest')
+data.setCell(1, 3, 45930);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'matterCreation')
+data.setCell(2, 2, 'com.iceridge.testcases.CreateMatterTest')
+data.setCell(2, 3, 45829);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'matterCreation')
+data.setCell(3, 2, 'com.iceridge.testcases.CreateMatterTest')
+data.setCell(3, 3, 44967);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'matterCreation')
+data.setCell(4, 2, 'com.iceridge.testcases.CreateMatterTest')
+data.setCell(4, 3, 44813);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'matterCreation')
+data.setCell(5, 2, 'com.iceridge.testcases.CreateMatterTest')
+data.setCell(5, 3, 14375);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginPage')
+data.setCell(6, 2, 'com.iceridge.testcases.LoginPageTest')
+data.setCell(6, 3, 11088);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'clientCreation')
+data.setCell(7, 2, 'com.iceridge.testcases.CreateClientTest')
+data.setCell(7, 3, 10599);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'clientCreation')
+data.setCell(8, 2, 'com.iceridge.testcases.CreateClientTest')
+data.setCell(8, 3, 10460);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'clientCreation')
+data.setCell(9, 2, 'com.iceridge.testcases.CreateClientTest')
+data.setCell(9, 3, 10098);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'clientCreation')
+data.setCell(10, 2, 'com.iceridge.testcases.CreateClientTest')
+data.setCell(10, 3, 10008);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'clientCreation')
+data.setCell(11, 2, 'com.iceridge.testcases.CreateClientTest')
+data.setCell(11, 3, 9956);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'clientCreation')
+data.setCell(12, 2, 'com.iceridge.testcases.CreateClientTest')
+data.setCell(12, 3, 9951);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'contactCreation')
+data.setCell(13, 2, 'com.iceridge.testcases.CreateNewContactTest')
+data.setCell(13, 3, 9916);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'contactCreation')
+data.setCell(14, 2, 'com.iceridge.testcases.CreateNewContactTest')
+data.setCell(14, 3, 9678);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'contactCreation')
+data.setCell(15, 2, 'com.iceridge.testcases.CreateNewContactTest')
+data.setCell(15, 3, 9668);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'contactCreation')
+data.setCell(16, 2, 'com.iceridge.testcases.CreateNewContactTest')
+data.setCell(16, 3, 9648);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'contactCreation')
+data.setCell(17, 2, 'com.iceridge.testcases.CreateNewContactTest')
+data.setCell(17, 3, 9615);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'contactCreation')
+data.setCell(18, 2, 'com.iceridge.testcases.CreateNewContactTest')
+data.setCell(18, 3, 9511);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'logoutPage')
+data.setCell(19, 2, 'com.iceridge.testcases.LogoutPageTest')
+data.setCell(19, 3, 2813);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">8 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.iceridge.testcases.CreateClientTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.iceridge.testcases.CreateNewContactTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.iceridge.testcases.CreateMatterTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.iceridge.testcases.LogoutPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.iceridge.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">loginPage</span>
+                <span class="method-start">14928 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.iceridge.testcases.CreateClientTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clientCreation(Mr, Paul, James Wild, 0255556780, test@espreon.com, 09/23/1978, 18, Powell Street, Avenue, Coogee, 2...)</span>
+                <span class="method-start">27094 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clientCreation(Mr, Antonio, Criola, 0255557781, test@espreon.com, 11/19/1981, 216, Edgar Street, Crest, Condell Par...)</span>
+                <span class="method-start">37696 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clientCreation(Mr, Floriana, Criola, 0255557781, test@espreon.com, 06/21/1983, 216, Edgar Street, Crest, Condell Pa...)</span>
+                <span class="method-start">47657 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clientCreation(Mr, Doon, Chung Hung, 0255558782, test@espreon.com, 07/17/1986, 1, Applebox Avenue, Ridge, Glenwood,...)</span>
+                <span class="method-start">57670 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clientCreation(Mr, Pui, Kuen Lam, 0255558782, test@espreon.com, 10/28/1988, 1, Applebox Avenue, Ridge, Glenwood, 27...)</span>
+                <span class="method-start">68132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clientCreation(Mr, ANATOLY, KITAYEVICH, 0255559783, test@espreon.com, 09/26/1987, 29/13-17, Bellevue Road, Grove, B...)</span>
+                <span class="method-start">78091 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.iceridge.testcases.CreateNewContactTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">contactCreation(Accountant, Mr, Paul, James Wild, 0255556780, test@espreon.com, 18, Powell Street, Avenue, Coogee, 2...)</span>
+                <span class="method-start">88320 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">contactCreation(Caveator, Mr, Antonio, Criola, 0255557781, test@espreon.com, 216, Edgar Street, Crest, Condell Park,...)</span>
+                <span class="method-start">98238 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">contactCreation(Caveator, Mr, Floriana, Criola, 0255557781, test@espreon.com, 216, Edgar Street, Crest, Condell Park...)</span>
+                <span class="method-start">107895 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">contactCreation(Conveyancer, Mr, Doon, Chung Hung, 0255558782, test@espreon.com, 1, Applebox Avenue, Ridge, Glenwood...)</span>
+                <span class="method-start">117408 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">contactCreation(Conveyancer, Mr, Pui, Kuen Lam, 0255558782, test@espreon.com, 1, Applebox Avenue, Ridge, Glenwood, 2...)</span>
+                <span class="method-start">127087 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">contactCreation(Mortgagee, Mr, ANATOLY, KITAYEVICH, 0255559783, test@espreon.com, 29/13-17, Bellevue Road, Grove, Be...)</span>
+                <span class="method-start">136706 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.iceridge.testcases.CreateMatterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">matterCreation(Purchasing a Property, NSW, 12341, 29/DP976765, 18, Powell Street, Avenue, Coogee, 2034, NSW, Cumber...)</span>
+                <span class="method-start">146507 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">matterCreation(Purchasing a Property, NSW, 12342, 32/13573, 216, Edgar Street, Crest, Condell Park, 2200, NSW, Hawk...)</span>
+                <span class="method-start">191477 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">matterCreation(Purchasing a Property, NSW, 12342, 32/13573, 216, Edgar Street, Crest, Condell Park, 2200, NSW, Hawk...)</span>
+                <span class="method-start">205863 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">matterCreation(Purchasing a Property, NSW, 12343, 314/1005966, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW, June...)</span>
+                <span class="method-start">250694 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">matterCreation(Purchasing a Property, NSW, 12343, 314/1005966, 1, Applebox Avenue, Ridge, Glenwood, 2768, NSW, June...)</span>
+                <span class="method-start">296527 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">matterCreation(Purchasing a Property, NSW, 12344, 29/SP22456, 29/13-17, Bellevue Road, Grove, Bellevue Hill, 2023, ...)</span>
+                <span class="method-start">342699 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.iceridge.testcases.LogoutPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">logoutPage</span>
+                <span class="method-start">388633 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.iceridge.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">391448 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

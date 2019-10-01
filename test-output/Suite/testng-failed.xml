@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.iceridge.testutilities.Report"/>
+  </listeners>
+  <test thread-count="5" name="Module 1(failed)">
+    <classes>
+      <class name="com.iceridge.testcases.CreateClientTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="clientCreation" invocation-numbers="1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.iceridge.testcases.CreateClientTest -->
+      <class name="com.iceridge.testcases.CreateMatterTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="matterCreation" invocation-numbers="1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.iceridge.testcases.CreateMatterTest -->
+    </classes>
+  </test> <!-- Module 1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

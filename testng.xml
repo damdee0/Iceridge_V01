@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+	<listener class-name="com.iceridge.testutilities.Report" />
+</listeners>
+
+  <test name="Module 1">
+  
+  <classes>
+  <class name = "com.iceridge.testcases.LoginPageTest" />
+  <class name = "com.iceridge.testcases.CreateClientTest" />  
+  <class name = "com.iceridge.testcases.CreateNewContactTest" />
+  <class name = "com.iceridge.testcases.CreateMatterTest" /> 
+  <class name = "com.iceridge.testcases.LogoutPageTest" /> 
+  </classes>
+  
+  </test> 
+   
+</suite> <!-- Suite -->
